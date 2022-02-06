@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d4eaf1;
+    display: grid;
+    place-items: center;
+}
+#mainContainer{
+   width: 30%;
+ 
+}
+#mainContainer > h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing:0.15em;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+.customeHr{
+    height: 10px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #2c8fbd;
+    margin-bottom: 3rem;
+}
+.card{
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+.image::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #5db1d6;
+    position: absolute;
+    border-radius: 50%;
+    top: -.38rem;
+    right: -.48rem;
+    z-index: -1;
+}
+.profilePic{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.hangoutIco{
+    top: 1.5rem;
+    left: -.5rem;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.cardMiddle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.cardMiddle >h2{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    letter-spacing: .2em;
+    text-transform: capitalize;
+}
+.cardMiddle >h3{
+    color: #5db1d6;
+    letter-spacing: .1em;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.cardMiddle >p {
+    color: grey;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5rem;
+    height: 8rem;
+}
+.card__btn__{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #5db1d6;
+    margin-bottom: 1rem;
+}
+.card__btn>span{
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+}
+.card__btn >span:hover{
+    display: inline-block;
+    text-shadow: 0 0 10px #5db1d6;
+    transform: scale(1.5);
+}
+.supriseMe_btn{
+    text-align: center;
+}
+.supriseMe_btn> button{
+    padding: 5px 10px;
+    border: 1px solid #5db1d6;
+    color: #5db1d6;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #dfede9;
+    cursor: pointer;
+    user-select: none;
+    transition: all .5s ;
+}
